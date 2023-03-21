@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>5-Day Weather Forecast</title>   
+</head>
+<body>
+    <nav class="navbarTitle">
+        5-Day Weather Dashboard
+    </nav>
+    <main>
+        <div class="column 1 rows">
+            <h1 class="m-bottom-1">Search for a City here:</h1>
+            <input id="input-city" class="input m-bottom-1" type="text" placeholder="Your City">
+            <button id="search-btn" class="btn m-bottom-1 link full-width">Search</button>
+            <div class="space m-bottom-1">
+            </div>
+            <div class="list-city">
+            </div>
+            <div class="space m-bottom-1">
+            </div>
+            <button id="reset" class="button m-bottom-2 m-top-1 full-width">Reset History</button>
+        </div>
+        <div class="column">
+            <div id="currentWeather" class="rows padding-1 m-bottom-2">
+                <div class="rowTitle">
+                    <h1 id="currentTitle" class="m-bottom-2">City Name - Date</h1>
+                    <img id="current_img">
+                </div>
+                <div class="m-bottom-2">
+                    <div id="temperature" class="m-bottom-2">placeholder</div>
+                    <div id="windspeed" class="m-bottom-2">placeholder</div>
+                    <div id="humid" class="m-bottom-2">placeholder</div>
+                </div>
+            </div>
+            <div id="Forecast" class="rows padding-1">
+                <h2>Weather Forecast:</h2>
+                <div id="forecast-area" class="column m-bottom-1">
+                </div>
+            </div>  
+        </div>  
+    </main>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
